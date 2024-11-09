@@ -1,0 +1,128 @@
+/* Basic body and header styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #4CAF50;
+    color: white;
+}
+
+/* Full-width containers */
+.pop-out {
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px; /* Controls max width for large screens */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.pop-out:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific image styling for sections */
+#about-me img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+#achievements img, #projects img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#achievements img:hover, #projects img:hover {
+    transform: scale(1.05);
+}
+
+/* Social media icons styling */
+#social-media a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+#social-media a:hover {
+    color: #4CAF50;
+}
+
+/* Styling for technical insights section */
+#technical-insights .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Ensuring skills section is responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

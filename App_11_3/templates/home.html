@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web Page</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+
+    <section id="about-me" class="pop-out">
+        <h2>About Me</h2>
+        <img src="{% static 'images/sathwika_1.jpeg' %}" alt="my image">
+        <p>Sathwika Joyce</p>
+        <p>20</p>
+        <p>School: PHS</p>
+        <p>College: Narayana College</p>
+        <p>Graduation: Pursuing B.Tech at KLH</p>
+        <!-- Add more about you here -->
+    </section>
+
+    <section id="achievements" class="pop-out">
+        <h2>Achievements</h2>
+        <img src="{% static 'images/Filterfiesta.jpeg' %}" alt="Achievement 1">
+        <p>My Experience with the Filter Fiesta Contest:
+
+            Participating in the Filter Fiesta contest at my college has been an exciting and rewarding experience. The challenge was to create a unique and engaging snap filter using the Snap AR application, which allowed me to dive into the world of augmented reality.
+            
+            At first, I was eager but unsure about how to fully utilize the Snap AR platform, so I spent time learning about its features and experimenting with different design elements. The process of creating a filter, from brainstorming ideas to bringing them to life, was both challenging and fun. I explored various creative tools within the Snap AR application to make the filter interactive, visually appealing, and aligned with current trends.
+            
+            Throughout this experience, I gained hands-on skills in AR design, learned how to combine creativity with technology, and developed a deeper understanding of augmented reality's potential in the digital world. It was also a great opportunity to collaborate with fellow participants, exchange ideas, and push my creative boundaries.
+            
+            Overall, this contest has not only enhanced my technical skills but also boosted my confidence in working with new technologies. I look forward to taking on more challenges in the future and continuing to explore the potential of AR in various creative fields.</p>
+        <!-- Add more achievements here -->
+    </section>
+
+    <section id="goals" class="pop-out">
+        <h2>Goals and Aims</h2>
+        <p>Driven by a commitment to growth, her goals include mastering new skills, specifically in web design, to create intuitive, visually appealing digital experiences.
+            Looking to expand her creative thinking and master health sciences in artificial intelligence, Sathwika aspires to contribute to advancements in healthcare technology, merging her interests in creativity, technology, and health.
+            </p>
+    </section>
+
+    <section id="resume" class="pop-out">
+        <h2>Resume</h2>
+        <p>Profile
+            Summary: A highly motivated and passionate B.Tech student at KLH with a keen interest in technology, design, and the intersections between creativity and health sciences.
+            Details: Skilled in various technical domains and committed to continuous learning, Sathwika is dedicated to expanding her expertise in web design and artificial intelligence applications in healthcare.
+            Attributes: Known for her creativity, attention to detail, and proactive approach, she actively seeks opportunities to refine her skill set and take on new challenges.
+            Aspirations: To innovate within health sciences using artificial intelligence, focusing on solutions that integrate health, creativity, and advanced tech.
+            Current Focus: Currently enhancing skills in web design and technical problem-solving to contribute to both visual and functional aspects of technology.
+            </p>
+        <a href="{% static 'resume/my_resume.pdf' %}" download>Download My Resume</a>
+    </section>
+
+    <section id="projects" class="pop-out">
+        <h2>Projects</h2>
+        <img src="{% static 'images/logo.jpeg' %}" alt="Achievement 1">
+        <p>"Wanderlens" is a travel suggestion website designed to help users explore the best travel destinations across India. The platform curates personalized travel recommendations based on user preferences, interests, and travel styles. Whether users are looking for cultural experiences, adventure, relaxation, or nature retreats, Wanderlens offers tailored suggestions to make travel planning easier and more enjoyable. The website provides detailed information about destinations, travel tips, itineraries, and local experiences, all specifically focused on the diverse regions and attractions within India.</p>
+    </section>
+
+    <section id="technical-insights" class="pop-out">
+        <h2>Technical Insights</h2>
+        <p>Here are some technical insights I've gained through my studies and projects:</p>
+        
+        <div class="skills-container">
+            <div class="skill">
+                <img src="{% static 'images/HTML5_logo.png' %}" alt="HTML Logo" class="skill-icon">
+                <h3>Web Development (HTML)</h3>
+                <p>Experienced in HTML for creating the structure of web pages, ensuring semantic and accessible markup.</p>
+            </div>
+            <div class="skill">
+                <img src="{% static 'images/CSS3_logo.png' %}" alt="CSS Logo" class="skill-icon">
+                <h3>Web Development (CSS)</h3>
+                <p>Proficient in CSS for styling websites, making them responsive, visually appealing, and user-friendly.</p>
+            </div>
+            <div class="skill">
+                <img src="{% static 'images/JavaScript-logo.png' %}" alt="JavaScript Logo" class="skill-icon">
+                <h3>JavaScript</h3>
+                <p>Skilled in JavaScript for creating interactive elements, animations, and improving user experience on the web.</p>
+            </div>
+            <div class="skill">
+                <img src="{% static 'images/django-logo.png' %}" alt="Django Logo" class="skill-icon">
+                <h3>Django (Web Framework)</h3>
+                <p>Proficient in using Django for developing web applications, building dynamic websites with backend functionality.</p>
+            </div>
+            <div class="skill">
+                <img src="{% static 'images/Sql_data_base_with_logo.png' %}" alt="SQLite Logo" class="skill-icon">
+                <h3>SQLite</h3>
+                <p>Experienced in using SQLite for lightweight database management in small web projects and applications.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="social-media" class="pop-out">
+        <h2>Social Media</h2>
+        <a href="https://facebook.com" target="_blank">
+            <img src="{% static 'images/Facebook_Logo.png' %}" alt="Facebook Logo" class="social-icon"> Facebook</a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="{% static 'images/x-icon.png' %}" alt="Facebook Logo" class="social-icon"> Twitter</a>
+        <a href="https://facebook.com" target="_blank">
+            <img src="{% static 'images/Instagram_logo.webp' %}" alt="Facebook Logo" class="social-icon"> Instagram</a>
+        <a href="https://facebook.com" target="_blank">
+            <img src="{% static 'images/LinkedIn_logo.png' %}" alt="Facebook Logo" class="social-icon"> Linkedin</a>
+        <!-- Add more social media links here -->
+    </section>
+
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
